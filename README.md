@@ -80,3 +80,35 @@ PATCH /policy-requests/:id/status - Actualizar el estatus de la póliza (Requier
 Para esta entrega, decidí priorizar la arquitectura robusta del backend, la optimización mediante caché con CacheManager y la documentación interactiva con Swagger. Debido a que actualmente estoy profundizando en mis conocimientos sobre testing automatizado con Jest, preferiero ser transparente en mi trabajo y no incluir algo que aún no domino, ya que si colocara algo sobre testing no sería de mi autoría o conocimiento. 
 
 Se que restará puntos y lo entiendo perfecto, agradezco mucho su tiempo, solo trato de ser honesto con mi trabajo y con ustedes que me brindan esta oportunidad de tomar la prueba.
+
+
+```
+**Evidencias de pruebas ejecutadas** 
+```
+- Registro de usuario
+
+[![Captura-de-pantalla-2026-05-16-221917.png](https://i.postimg.cc/j2Qgj4LB/Captura-de-pantalla-2026-05-16-221917.png)](https://postimg.cc/zHvStWwk)
+
+- Inicio de sesión
+
+[![Captura-de-pantalla-2026-05-16-221936.png](https://i.postimg.cc/QCrYsydX/Captura-de-pantalla-2026-05-16-221936.png)](https://postimg.cc/k6fvvwSZ)
+
+- Desactivar usuario
+
+[![Captura-de-pantalla-2026-05-16-221947.png](https://i.postimg.cc/nrtSZPhn/Captura-de-pantalla-2026-05-16-221947.png)](https://postimg.cc/nj0GGTmW)
+
+- Crear solicitud de póliza
+
+[![Captura-de-pantalla-2026-05-16-222006.png](https://i.postimg.cc/zvStfFV6/Captura-de-pantalla-2026-05-16-222006.png)](https://postimg.cc/p5rYG8QJ)
+
+-Obtener póliza por id
+
+[![Captura-de-pantalla-2026-05-16-222019.png](https://i.postimg.cc/hvbyG1fH/Captura-de-pantalla-2026-05-16-222019.png)](https://postimg.cc/SYR7T8Lr)
+
+- Obtener pólizas por filtros
+
+[![Captura-de-pantalla-2026-05-16-222040.png](https://i.postimg.cc/QCk4MJFG/Captura-de-pantalla-2026-05-16-222040.png)](https://postimg.cc/SYR7T8LD)
+
+- Actualizar status de póliza
+
+[![Captura-de-pantalla-2026-05-16-222051.png](https://i.postimg.cc/90t8fYDj/Captura-de-pantalla-2026-05-16-222051.png)](https://postimg.cc/gLjqSRyM)

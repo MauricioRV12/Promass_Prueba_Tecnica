@@ -39,8 +39,9 @@ $ npm run start:prod
   DB_PORT=1433
   PORT=3000
 
+ ```
 **Documentación de la API (Swagger)**
-
+```
 La documentación interactiva de todos los endpoints, esquemas de datos y DTOs está integrada en el proyecto. Una vez que el servidor esté corriendo, puedes acceder desde tu navegador a:
 
 http://localhost:3000/docs-policy-requests
@@ -58,9 +59,9 @@ GET /policy-requests/:id - Obtener el detalle de una solicitud por ID.
 
 PATCH /policy-requests/:id/status - Actualizar el estatus de la póliza (Requiere rol admin o supervisor).
 
-
+```
 **Decisiones Técnicas**
-
+```
 ### 1. Manejo del Caché (`CacheManager`)
 - **Decisión:** Se implementó una estrategia de almacenamiento en caché (In-Memory) con un tiempo de vida (TTL) de 5 minutos para el endpoint `GET /policy-requests`.
 - **Justificación:** Las consultas con filtros complejos (como búsquedas por `LIKE` en strings con `customerName` o `folio`) y paginación suelen ser costosas para la base de datos a medida que el volumen de datos crece. Al cachear la respuesta basándonos en la combinación única de filtros, reducimos drásticamente la carga en la base de datos y mejoramos el tiempo de respuesta (latencia) para peticiones repetitivas de los usuarios.
@@ -73,9 +74,9 @@ PATCH /policy-requests/:id/status - Actualizar el estatus de la póliza (Requier
 - **Decisión:** Para comporbación de status al iniciar sesión.
 - **Justificación:** Lo agregue como extra para poder validar que unicamente puedan iniciar sesión aquellos usuarios que tengan status = 'activo' en base de datos, si está como 'inactive' el endpoint (`auth/login`) lanzará un error mencionando que dicho usuario se encuentra inactivo.
 
-
+```
 **Nota sobre el alcance del proyecto (Testing)**
-
+```
 Para esta entrega, decidí priorizar la arquitectura robusta del backend, la optimización mediante caché con CacheManager y la documentación interactiva con Swagger. Debido a que actualmente estoy profundizando en mis conocimientos sobre testing automatizado con Jest, preferiero ser transparente en mi trabajo y no incluir algo que aún no domino, ya que si colocara algo sobre testing no sería de mi autoría o conocimiento. 
 
 Se que restará puntos y lo entiendo perfecto, agradezco mucho su tiempo, solo trato de ser honesto con mi trabajo y con ustedes que me brindan esta oportunidad de tomar la prueba.

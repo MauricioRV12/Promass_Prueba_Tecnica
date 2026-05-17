@@ -1,0 +1,272 @@
+{
+  "info": {
+    "_postman_id": "a565fa98-0faf-4aea-93d1-a636e22a90ae",
+    "name": "Prueba_Tecnica_Promass_Mauricio_Rico",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "33809224"
+  },
+  "item": [
+    {
+      "name": "auth",
+      "item": [
+        {
+          "name": "Sign Up",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Mauricio\",\r\n    \"lastName\": \"Rico\",\r\n    \"username\": \"Mauricio12\",\r\n    \"email\": \"mauriciorico43@gmail.com\",\r\n    \"password\": \"prueba1234\"\r\n    //\"role\": \"admin\" // 'user', 'admin', 'supervisor'. Campo opcional\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/signup",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "signup"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"Mauricio12\",\r\n    \"password\": \"prueba1234\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Deactivate user",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJNYXVyaWNpbzEyIiwiaWF0IjoxNzc4OTg2ODIyLCJleHAiOjE3Nzg5OTQwMjJ9.5mfSSP0vAxOWw06ZnJR9C5CrUC40ZaX8k1bHHBTvnos",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/auth/deactivate/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "deactivate",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Policy Requests",
+      "item": [
+        {
+          "name": "Find by id",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJNYXVyaWNpbzEyIiwiaWF0IjoxNzc4OTg2ODIyLCJleHAiOjE3Nzg5OTQwMjJ9.5mfSSP0vAxOWw06ZnJR9C5CrUC40ZaX8k1bHHBTvnos",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJNYXVyaWNpbzEyIiwiaWF0IjoxNzc4OTc4NjI0LCJleHAiOjE3Nzg5ODU4MjR9.ykimRSi4vCUU5YkZS8D2iYQN1WXbs1UXvLAMleu62to",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/policy-requests/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "policy-requests",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJNYXVyaWNpbzEyIiwiaWF0IjoxNzc4OTg2ODIyLCJleHAiOjE3Nzg5OTQwMjJ9.5mfSSP0vAxOWw06ZnJR9C5CrUC40ZaX8k1bHHBTvnos",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"customerName\": \"Sofia\",\r\n    \"customerEmail\": \"sofia@gmail.com\",\r\n    \"product\": \"Seguro de auto\",\r\n    \"insuredAmount\": 50000\r\n    // \"status\": \"\" // es opcional\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/policy-requests",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "policy-requests"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Find by filters",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJNYXVyaWNpbzEyIiwiaWF0IjoxNzc4OTg2ODIyLCJleHAiOjE3Nzg5OTQwMjJ9.5mfSSP0vAxOWw06ZnJR9C5CrUC40ZaX8k1bHHBTvnos",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/policy-requests?status=pending&customerName=Sofia&numRequests=2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "policy-requests"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "pending"
+                },
+                {
+                  "key": "customerName",
+                  "value": "Sofia"
+                },
+                {
+                  "key": "folio",
+                  "value": "D8004031-9151-F111-AE2A-687A64D6A32A",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "numRequests",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update status",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJNYXVyaWNpbzEyIiwiaWF0IjoxNzc4OTg2ODIyLCJleHAiOjE3Nzg5OTQwMjJ9.5mfSSP0vAxOWw06ZnJR9C5CrUC40ZaX8k1bHHBTvnos",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"status\": \"pending\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/policy-requests/1/status",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "policy-requests",
+                "1",
+                "status"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

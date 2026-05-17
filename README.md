@@ -81,48 +81,15 @@ Para esta entrega, decidí priorizar la arquitectura robusta del backend, la opt
 
 Se que restará puntos y lo entiendo perfecto, agradezco mucho su tiempo, solo trato de ser honesto con mi trabajo y con ustedes que me brindan esta oportunidad de tomar la prueba.
 
+```
+**Evidencias de pruebas ejecutadas** 
 
-```
-**Evidencias de pruebas ejecutadas** 
-```
-**Evidencias de pruebas ejecutadas** 
 
 * **Registro de usuario**
-
-  [![Captura-de-pantalla-2026-05-16-221917.png](https://i.postimg.cc/j2Qgj4LB/Captura-de-pantalla-2026-05-16-221917.png)](https://postimg.cc/zHvStWwk)
-
----
-
-* **Inicio de sesión**
-
-  [![Captura-de-pantalla-2026-05-16-221936.png](https://i.postimg.cc/QCrYsydX/Captura-de-pantalla-2026-05-16-221936.png)](https://postimg.cc/k6fvvwSZ)
+  
+  <img src="https://i.postimg.cc/j2Qgj4LB/Captura-de-pantalla-2026-05-16-221917.png" alt="Registro de usuario" width="100%" />
 
 ---
 
-* **Desactivar usuario**
 
-  [![Captura-de-pantalla-2026-05-16-221947.png](https://i.postimg.cc/nrtSZPhn/Captura-de-pantalla-2026-05-16-221947.png)](https://postimg.cc/nj0GGTmW)
-
----
-
-* **Crear solicitud de póliza**
-
-  [![Captura-de-pantalla-2026-05-16-222006.png](https://i.postimg.cc/zvStfFV6/Captura-de-pantalla-2026-05-16-222006.png)](https://postimg.cc/p5rYG8QJ)
-
----
-
-* **Obtener póliza por ID**
-
-  [![Captura-de-pantalla-2026-05-16-222019.png](https://i.postimg.cc/hvbyG1fH/Captura-de-pantalla-2026-05-16-222019.png)](https://postimg.cc/SYR7T8Lr)
-
----
-
-* **Obtener pólizas por filtros**
-
-  [![Captura-de-pantalla-2026-05-16-222040.png](https://i.postimg.cc/QCk4MJFG/Captura-de-pantalla-2026-05-16-222040.png)](https://postimg.cc/SYR7T8LD)
-
----
-
-* **Actualizar estatus de póliza**
-
-  [![Captura-de-pantalla-2026-05-16-222051.png](https://i.postimg.cc/90t8fYDj/Captura-de-pantalla-2026-05-16-222051.png)](https://postimg.cc/gLjqSRyM)
+```

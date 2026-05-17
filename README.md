@@ -91,5 +91,38 @@ Se que restará puntos y lo entiendo perfecto, agradezco mucho su tiempo, solo t
 
 ---
 
+* **Inicio de sesión**
+  
+  <img src="https://i.postimg.cc/QCrYsydX/Captura-de-pantalla-2026-05-16-221936.png" alt="Inicio de sesión" width="100%" />
+
+---
+
+* **Desactivar usuario**
+  
+  <img src="https://i.postimg.cc/nrtSZPhn/Captura-de-pantalla-2026-05-16-221947.png" alt="Desactivar usuario" width="100%" />
+
+---
+
+* **Crear solicitud de póliza**
+  
+  <img src="https://i.postimg.cc/zvStfFV6/Captura-de-pantalla-2026-05-16-222006.png" alt="Crear solicitud de póliza" width="100%" />
+
+---
+
+* **Obtener póliza por ID**
+  
+  <img src="https://i.postimg.cc/hvbyG1fH/Captura-de-pantalla-2026-05-16-222019.png" alt="Obtener póliza por ID" width="100%" />
+
+---
+
+* **Obtener pólizas por filtros**
+  
+  <img src="https://i.postimg.cc/QCk4MJFG/Captura-de-pantalla-2026-05-16-222040.png" alt="Obtener pólizas por filtros" width="100%" />
+
+---
+
+* **Actualizar estatus de póliza**
+  
+  <img src="https://i.postimg.cc/90t8fYDj/Captura-de-pantalla-2026-05-16-222051.png" alt="Actualizar estatus de póliza" width="100%" />
 
 ```
